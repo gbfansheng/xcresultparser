@@ -34,9 +34,10 @@ public struct CoverageConverter {
         codeCoverage = record
     }
     
-    public func xmlString(quiet: Bool) throws -> String {
+    public func xmlString(quiet: Bool) throws -> (String, XMLElement) {
         let coverageXML = XMLElement(name: "coverage")
         coverageXML.addAttribute(name: "version", stringValue: "1")
+        var rawXML: XMLElement?
         let files = try coverageFileList()
         
         // since we need to invoke xccov for each file, it takes pretty much time
@@ -53,6 +54,11 @@ public struct CoverageConverter {
                 do {
                     let coverage = try fileCoverageXML(for: file, relativeTo: projectRoot)
                     coverageXML.addChild(coverage)
+                    if let rawXML = rawXML {
+                        rawXML.addChild(coverage.copy() as! XMLElement)
+                    } else {
+                        rawXML = coverage.copy() as? XMLElement
+                    }
                 } catch {
                     writeToStdErrorLn(error.localizedDescription)
                 }
@@ -61,7 +67,7 @@ public struct CoverageConverter {
         }
         // This will block until all our operation have compleated (or been canceled)
         queue.waitUntilAllOperationsAreFinished()
-        return coverageXML.xmlString(options: [.nodePrettyPrint, .nodeCompactEmptyElement])
+        return (coverageXML.xmlString(options: [.nodePrettyPrint, .nodeCompactEmptyElement]), rawXML!)
     }
 
     private func writeToStdErrorLn(_ str: String) {

@@ -44,34 +44,40 @@ struct xcresultparser: ParsableCommand {
     var version: Int
     
     @Argument(help: "The path to the .xcresult file.")
-    var xcresultFile: String?
+    var xcresultFile: [String]
     
     mutating func run() throws {
         guard version != 1 else {
             print(marketingVersion)
             return
         }
-        guard let xcresult = xcresultFile,
-              !xcresult.isEmpty else {
+        guard xcresultFile.count > 0 else {
             throw ParseError.argumentError
         }
-        if format == .xml {
-            if coverage == 1 {
-                try outputSonarXML(for: xcresult)
+        let mergeXML = XMLElement(name: "coverage")
+        mergeXML.addAttribute(XMLNode.attribute(withName: "version", stringValue:"1") as! XMLNode)
+        for xcresult in xcresultFile {
+            if format == .xml {
+                if coverage == 1 {
+                    let addXML = try outputSonarXML(for: xcresult)
+                    mergeXML.addChild(addXML)
+                } else {
+                    try outputJUnitXML(for: xcresult)
+                }
             } else {
-                try outputJUnitXML(for: xcresult)
+                try outputDescription(for: xcresult)
             }
-        } else {
-            try outputDescription(for: xcresult)
         }
+        writeToStdOut((mergeXML.xmlString(options: [.nodePrettyPrint, .nodeCompactEmptyElement])))
     }
     
-    private func outputSonarXML(for xcresult: String) throws {
+    private func outputSonarXML(for xcresult: String) throws -> XMLElement {
         guard let converter = CoverageConverter(with: URL(fileURLWithPath: xcresult), projectRoot: projectRoot ?? "") else {
             throw ParseError.argumentError
         }
-        let rslt = try converter.xmlString(quiet: quiet == 1)
+        let (rslt, rawXML) = try converter.xmlString(quiet: quiet == 1)
         writeToStdOut(rslt)
+        return rawXML
     }
     
     private func outputJUnitXML(for xcresult: String) throws {
