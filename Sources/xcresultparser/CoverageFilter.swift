@@ -15,13 +15,12 @@ enum CoverageFilterError: Error {
 class CoverageFilter {
     var blackListFilePath: String?
     var blackListRegex: String?
-    var blackList: [String]
+    var blackList: [String] = []
     
     init(filePath: String?, regex: String?) throws {
         blackListFilePath = filePath
         blackListRegex = regex
-        let b = try readBlackListFile()
-        blackList = b
+        blackList = try readBlackListFile()
     }
     
     func readBlackListFile() throws -> [String] {

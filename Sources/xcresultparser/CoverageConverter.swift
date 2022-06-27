@@ -23,17 +23,21 @@ public struct CoverageConverter {
     private let resultFile: XCResultFile
     private let projectRoot: String
     private let codeCoverage: CodeCoverage
-    private let coverageFilter: CoverageFilter
+    private let coverageFilter: CoverageFilter?
     
-    public init?(with url: URL,
-          projectRoot: String = "") {
+    public init?(with url: URL, projectRoot: String = "", blackListFilePath: String? = nil, blackListRegex: String? = nil) {
         resultFile = XCResultFile(url: url)
         guard let record = resultFile.getCodeCoverage() else {
             return nil
         }
         self.projectRoot = projectRoot
         codeCoverage = record
-        coverageFilter = CoverageFilter()
+        do {
+            coverageFilter = try CoverageFilter(filePath: blackListFilePath, regex: blackListRegex)
+        } catch {
+            coverageFilter = nil
+            writeToStdErrorLn("init CoverageFilter fail")
+        }
     }
     
     public func xmlString(quiet: Bool) throws -> (String, XMLElement) {
