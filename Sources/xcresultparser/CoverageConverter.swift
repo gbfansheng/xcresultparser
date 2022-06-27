@@ -23,6 +23,7 @@ public struct CoverageConverter {
     private let resultFile: XCResultFile
     private let projectRoot: String
     private let codeCoverage: CodeCoverage
+    private let coverageFilter: CoverageFilter
     
     public init?(with url: URL,
           projectRoot: String = "") {
@@ -32,6 +33,7 @@ public struct CoverageConverter {
         }
         self.projectRoot = projectRoot
         codeCoverage = record
+        coverageFilter = CoverageFilter()
     }
     
     public func xmlString(quiet: Bool) throws -> (String, XMLElement) {

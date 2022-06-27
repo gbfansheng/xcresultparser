@@ -27,6 +27,10 @@ let package = Package(
             url: "https://github.com/davidahouse/XCResultKit.git",
             .upToNextMajor(from: "0.9.2")
         ),
+        .package(
+            url: "https://github.com/jpsim/Yams.git",
+            from: "5.0.0"
+        ),
     ],
     targets: [
         .executableTarget(
@@ -44,6 +48,10 @@ let package = Package(
                 .product(
                     name: "XCResultKit",
                     package: "XCResultKit"
+                ),
+                .product(
+                    name: "Yams",
+                    package: "Yams"
                 ),
             ],
             path: "Sources"

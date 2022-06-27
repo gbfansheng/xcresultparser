@@ -28,6 +28,12 @@ struct xcresultparser: ParsableCommand {
     @Option(name: .shortAndLong, help: "The fields in the summary. Default is all: errors|warnings|analyzerWarnings|tests|failed|skipped")
     var summaryFields: String?
     
+    @Option(name: .shortAndLong, help: "The blackList file path. A yaml file of paths, key value is 'blackList' ")
+    var blackListFile: String?
+    
+    @Option(name: .shortAndLong, help: "File paths regex to filter files")
+    var regexForBlackList: String?
+    
     @Flag(name: .shortAndLong, help: "Whether to print coverage data.")
     var coverage: Int
     

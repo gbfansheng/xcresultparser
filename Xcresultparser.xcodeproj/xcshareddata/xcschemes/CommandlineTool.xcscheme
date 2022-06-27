@@ -60,6 +60,12 @@
             ReferencedContainer = "container:Xcresultparser.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-c -o xml /opt/simba_home/simba_agent/workspace/JTY/jty-app-ios_jytiossit/UnitTestResult/iGoldSunMainTestResults.xcresult -b /opt/simba_home/simba_agent/workspace/JTY/jty-app-ios_jytiossit/tools/UnitTestBlackList.yaml -r &apos;//a&apos; &gt; test.xml"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
