@@ -17,11 +17,12 @@
             "en"
          );
          mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_136";
+         productRefGroup = "OBJ_167";
          projectDirPath = ".";
          targets = (
             "swift-argument-parser::ArgumentParser",
             "swift-argument-parser::ArgumentParserToolInfo",
+            "Yams::CYaml",
             "Xcresultparser::CommandlineTool",
             "XCResultKit::XCResultKit",
             "XCResultKit::SwiftPMPackageDescription",
@@ -29,6 +30,8 @@
             "Xcresultparser::SwiftPMPackageDescription",
             "Xcresultparser::XcresultparserPackageTests::ProductTarget",
             "Xcresultparser::XcresultparserTests",
+            "Yams::Yams",
+            "Yams::SwiftPMPackageDescription",
             "swift-argument-parser::SwiftPMPackageDescription",
             "Xcresultparser::xcresultparser::ProductTarget"
          );
@@ -40,61 +43,52 @@
       };
       "OBJ_100" = {
          isa = "PBXFileReference";
-         path = "Flag.swift";
+         path = "DocumentLocation.swift";
          sourceTree = "<group>";
       };
       "OBJ_101" = {
          isa = "PBXFileReference";
-         path = "NameSpecification.swift";
+         path = "IssueSummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_102" = {
          isa = "PBXFileReference";
-         path = "Option.swift";
+         path = "LogStoreExecution.swift";
          sourceTree = "<group>";
       };
       "OBJ_103" = {
          isa = "PBXFileReference";
-         path = "OptionGroup.swift";
+         path = "LogStoreManifest.swift";
          sourceTree = "<group>";
       };
       "OBJ_104" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_105",
-            "OBJ_106",
-            "OBJ_107",
-            "OBJ_108",
-            "OBJ_109",
-            "OBJ_110"
-         );
-         name = "Parsable Types";
-         path = "Parsable Types";
+         isa = "PBXFileReference";
+         path = "Logger.swift";
          sourceTree = "<group>";
       };
       "OBJ_105" = {
          isa = "PBXFileReference";
-         path = "CommandConfiguration.swift";
+         path = "Reference.swift";
          sourceTree = "<group>";
       };
       "OBJ_106" = {
          isa = "PBXFileReference";
-         path = "EnumerableFlag.swift";
+         path = "ResultIssueSummaries.swift";
          sourceTree = "<group>";
       };
       "OBJ_107" = {
          isa = "PBXFileReference";
-         path = "ExpressibleByArgument.swift";
+         path = "ResultMetrics.swift";
          sourceTree = "<group>";
       };
       "OBJ_108" = {
          isa = "PBXFileReference";
-         path = "ParsableArguments.swift";
+         path = "TestFailureIssueSummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_109" = {
          isa = "PBXFileReference";
-         path = "ParsableArgumentsValidation.swift";
+         path = "TypeDefinition.swift";
          sourceTree = "<group>";
       };
       "OBJ_11" = {
@@ -108,66 +102,61 @@
       };
       "OBJ_110" = {
          isa = "PBXFileReference";
-         path = "ParsableCommand.swift";
+         path = "XCResultBool.swift";
          sourceTree = "<group>";
       };
       "OBJ_111" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_112",
-            "OBJ_113",
-            "OBJ_114",
-            "OBJ_115",
-            "OBJ_116",
-            "OBJ_117",
-            "OBJ_118",
-            "OBJ_119",
-            "OBJ_120",
-            "OBJ_121"
-         );
-         name = "Parsing";
-         path = "Parsing";
+         isa = "PBXFileReference";
+         path = "XCResultDate.swift";
          sourceTree = "<group>";
       };
       "OBJ_112" = {
          isa = "PBXFileReference";
-         path = "ArgumentDecoder.swift";
+         path = "XCResultDouble.swift";
          sourceTree = "<group>";
       };
       "OBJ_113" = {
          isa = "PBXFileReference";
-         path = "ArgumentDefinition.swift";
+         path = "XCResultFile.swift";
          sourceTree = "<group>";
       };
       "OBJ_114" = {
          isa = "PBXFileReference";
-         path = "ArgumentSet.swift";
+         path = "XCResultInt.swift";
          sourceTree = "<group>";
       };
       "OBJ_115" = {
          isa = "PBXFileReference";
-         path = "CommandParser.swift";
+         path = "XCResultKit.swift";
          sourceTree = "<group>";
       };
       "OBJ_116" = {
          isa = "PBXFileReference";
-         path = "InputOrigin.swift";
+         path = "XCResultObject.swift";
          sourceTree = "<group>";
       };
       "OBJ_117" = {
          isa = "PBXFileReference";
-         path = "Name.swift";
+         path = "XCResultString.swift";
          sourceTree = "<group>";
       };
       "OBJ_118" = {
          isa = "PBXFileReference";
-         path = "Parsed.swift";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/shenglinfan/Desktop/workspace/xcresultparser/.build/checkouts/XCResultKit/Package.swift";
          sourceTree = "<group>";
       };
       "OBJ_119" = {
-         isa = "PBXFileReference";
-         path = "ParsedValues.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_120",
+            "OBJ_164",
+            "OBJ_166"
+         );
+         name = "swift-argument-parser 0.5.0";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_12" = {
          isa = "PBXGroup";
@@ -175,76 +164,89 @@
             "OBJ_13",
             "OBJ_14",
             "OBJ_15",
-            "OBJ_28",
-            "OBJ_29"
+            "OBJ_16",
+            "OBJ_29",
+            "OBJ_30"
          );
          name = "xcresultparser";
          path = "xcresultparser";
          sourceTree = "<group>";
       };
       "OBJ_120" = {
-         isa = "PBXFileReference";
-         path = "ParserError.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_121",
+            "OBJ_126",
+            "OBJ_135",
+            "OBJ_142",
+            "OBJ_153",
+            "OBJ_159"
+         );
+         name = "ArgumentParser";
+         path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_121" = {
-         isa = "PBXFileReference";
-         path = "SplitArguments.swift";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_122",
+            "OBJ_123",
+            "OBJ_124",
+            "OBJ_125"
+         );
+         name = "Completions";
+         path = "Completions";
          sourceTree = "<group>";
       };
       "OBJ_122" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_123",
-            "OBJ_124",
-            "OBJ_125",
-            "OBJ_126",
-            "OBJ_127"
-         );
-         name = "Usage";
-         path = "Usage";
+         isa = "PBXFileReference";
+         path = "BashCompletionsGenerator.swift";
          sourceTree = "<group>";
       };
       "OBJ_123" = {
          isa = "PBXFileReference";
-         path = "DumpHelpGenerator.swift";
+         path = "CompletionsGenerator.swift";
          sourceTree = "<group>";
       };
       "OBJ_124" = {
          isa = "PBXFileReference";
-         path = "HelpCommand.swift";
+         path = "FishCompletionsGenerator.swift";
          sourceTree = "<group>";
       };
       "OBJ_125" = {
          isa = "PBXFileReference";
-         path = "HelpGenerator.swift";
+         path = "ZshCompletionsGenerator.swift";
          sourceTree = "<group>";
       };
       "OBJ_126" = {
-         isa = "PBXFileReference";
-         path = "MessageInfo.swift";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_127",
+            "OBJ_128",
+            "OBJ_129",
+            "OBJ_130",
+            "OBJ_131",
+            "OBJ_132",
+            "OBJ_133",
+            "OBJ_134"
+         );
+         name = "Parsable Properties";
+         path = "Parsable Properties";
          sourceTree = "<group>";
       };
       "OBJ_127" = {
          isa = "PBXFileReference";
-         path = "UsageGenerator.swift";
+         path = "Argument.swift";
          sourceTree = "<group>";
       };
       "OBJ_128" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_129",
-            "OBJ_130",
-            "OBJ_131",
-            "OBJ_132"
-         );
-         name = "Utilities";
-         path = "Utilities";
+         isa = "PBXFileReference";
+         path = "ArgumentHelp.swift";
          sourceTree = "<group>";
       };
       "OBJ_129" = {
          isa = "PBXFileReference";
-         path = "CollectionExtensions.swift";
+         path = "CompletionKind.swift";
          sourceTree = "<group>";
       };
       "OBJ_13" = {
@@ -254,446 +256,341 @@
       };
       "OBJ_130" = {
          isa = "PBXFileReference";
-         path = "SequenceExtensions.swift";
+         path = "Errors.swift";
          sourceTree = "<group>";
       };
       "OBJ_131" = {
          isa = "PBXFileReference";
-         path = "StringExtensions.swift";
+         path = "Flag.swift";
          sourceTree = "<group>";
       };
       "OBJ_132" = {
          isa = "PBXFileReference";
-         path = "Tree.swift";
+         path = "NameSpecification.swift";
          sourceTree = "<group>";
       };
       "OBJ_133" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_134"
-         );
-         name = "ArgumentParserToolInfo";
-         path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "Option.swift";
+         sourceTree = "<group>";
       };
       "OBJ_134" = {
          isa = "PBXFileReference";
-         path = "ToolInfo.swift";
+         path = "OptionGroup.swift";
          sourceTree = "<group>";
       };
       "OBJ_135" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Users/linfan/Documents/GitHub/xcresultparser/.build/checkouts/swift-argument-parser/Package.swift";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_136",
+            "OBJ_137",
+            "OBJ_138",
+            "OBJ_139",
+            "OBJ_140",
+            "OBJ_141"
+         );
+         name = "Parsable Types";
+         path = "Parsable Types";
          sourceTree = "<group>";
       };
       "OBJ_136" = {
-         isa = "PBXGroup";
-         children = (
-            "swift-argument-parser::ArgumentParser::Product",
-            "swift-argument-parser::ArgumentParserToolInfo::Product",
-            "Xcresultparser::CommandlineTool::Product",
-            "XCResultKit::XCResultKit::Product",
-            "Xcresultparser::XcresultparserLib::Product",
-            "Xcresultparser::XcresultparserTests::Product"
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
+         isa = "PBXFileReference";
+         path = "CommandConfiguration.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_137" = {
+         isa = "PBXFileReference";
+         path = "EnumerableFlag.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_138" = {
+         isa = "PBXFileReference";
+         path = "ExpressibleByArgument.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_139" = {
+         isa = "PBXFileReference";
+         path = "ParsableArguments.swift";
+         sourceTree = "<group>";
       };
       "OBJ_14" = {
          isa = "PBXFileReference";
-         path = "JunitXML.swift";
+         path = "CoverageFilter.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_140" = {
+         isa = "PBXFileReference";
+         path = "ParsableArgumentsValidation.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_141" = {
+         isa = "PBXFileReference";
+         path = "ParsableCommand.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_142" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_143",
+            "OBJ_144",
+            "OBJ_145",
+            "OBJ_146",
+            "OBJ_147",
+            "OBJ_148",
+            "OBJ_149",
+            "OBJ_150",
+            "OBJ_151",
+            "OBJ_152"
+         );
+         name = "Parsing";
+         path = "Parsing";
          sourceTree = "<group>";
       };
       "OBJ_143" = {
          isa = "PBXFileReference";
-         path = "images";
-         sourceTree = "SOURCE_ROOT";
+         path = "ArgumentDecoder.swift";
+         sourceTree = "<group>";
       };
       "OBJ_144" = {
          isa = "PBXFileReference";
-         path = "CommandlineTool";
-         sourceTree = "SOURCE_ROOT";
+         path = "ArgumentDefinition.swift";
+         sourceTree = "<group>";
       };
       "OBJ_145" = {
          isa = "PBXFileReference";
-         path = "DerivedData";
-         sourceTree = "SOURCE_ROOT";
+         path = "ArgumentSet.swift";
+         sourceTree = "<group>";
       };
       "OBJ_146" = {
          isa = "PBXFileReference";
-         path = "LICENSE";
+         path = "CommandParser.swift";
          sourceTree = "<group>";
       };
       "OBJ_147" = {
          isa = "PBXFileReference";
-         path = "CHANGELOG.md";
+         path = "InputOrigin.swift";
          sourceTree = "<group>";
       };
       "OBJ_148" = {
          isa = "PBXFileReference";
-         path = "Makefile";
+         path = "Name.swift";
          sourceTree = "<group>";
       };
       "OBJ_149" = {
          isa = "PBXFileReference";
-         path = "README.md";
+         path = "Parsed.swift";
          sourceTree = "<group>";
       };
       "OBJ_15" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_16",
-            "OBJ_27"
-         );
-         name = "OutputFormatting";
-         path = "OutputFormatting";
+         isa = "PBXFileReference";
+         path = "JunitXML.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_150" = {
+         isa = "PBXFileReference";
+         path = "ParsedValues.swift";
          sourceTree = "<group>";
       };
       "OBJ_151" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_152",
-            "OBJ_153"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+         isa = "PBXFileReference";
+         path = "ParserError.swift";
+         sourceTree = "<group>";
       };
       "OBJ_152" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParser_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "ArgumentParser";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
+         isa = "PBXFileReference";
+         path = "SplitArguments.swift";
+         sourceTree = "<group>";
       };
       "OBJ_153" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParser_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "ArgumentParser";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_154" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
+         isa = "PBXGroup";
+         children = (
+            "OBJ_154",
             "OBJ_155",
             "OBJ_156",
             "OBJ_157",
-            "OBJ_158",
-            "OBJ_159",
+            "OBJ_158"
+         );
+         name = "Usage";
+         path = "Usage";
+         sourceTree = "<group>";
+      };
+      "OBJ_154" = {
+         isa = "PBXFileReference";
+         path = "DumpHelpGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_155" = {
+         isa = "PBXFileReference";
+         path = "HelpCommand.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_156" = {
+         isa = "PBXFileReference";
+         path = "HelpGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_157" = {
+         isa = "PBXFileReference";
+         path = "MessageInfo.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_158" = {
+         isa = "PBXFileReference";
+         path = "UsageGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_159" = {
+         isa = "PBXGroup";
+         children = (
             "OBJ_160",
             "OBJ_161",
             "OBJ_162",
-            "OBJ_163",
-            "OBJ_164",
-            "OBJ_165",
-            "OBJ_166",
-            "OBJ_167",
-            "OBJ_168",
-            "OBJ_169",
-            "OBJ_170",
-            "OBJ_171",
-            "OBJ_172",
-            "OBJ_173",
-            "OBJ_174",
-            "OBJ_175",
-            "OBJ_176",
-            "OBJ_177",
-            "OBJ_178",
-            "OBJ_179",
-            "OBJ_180",
-            "OBJ_181",
-            "OBJ_182",
-            "OBJ_183",
-            "OBJ_184",
-            "OBJ_185",
-            "OBJ_186",
-            "OBJ_187",
-            "OBJ_188",
-            "OBJ_189",
-            "OBJ_190",
-            "OBJ_191"
+            "OBJ_163"
          );
-      };
-      "OBJ_155" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_91";
-      };
-      "OBJ_156" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_92";
-      };
-      "OBJ_157" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_93";
-      };
-      "OBJ_158" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_94";
-      };
-      "OBJ_159" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_96";
+         name = "Utilities";
+         path = "Utilities";
+         sourceTree = "<group>";
       };
       "OBJ_16" = {
          isa = "PBXGroup";
          children = (
             "OBJ_17",
-            "OBJ_20",
-            "OBJ_22",
-            "OBJ_24",
-            "OBJ_26"
+            "OBJ_28"
          );
-         name = "Formatters";
-         path = "Formatters";
+         name = "OutputFormatting";
+         path = "OutputFormatting";
          sourceTree = "<group>";
       };
       "OBJ_160" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_97";
+         isa = "PBXFileReference";
+         path = "CollectionExtensions.swift";
+         sourceTree = "<group>";
       };
       "OBJ_161" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_98";
+         isa = "PBXFileReference";
+         path = "SequenceExtensions.swift";
+         sourceTree = "<group>";
       };
       "OBJ_162" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_99";
+         isa = "PBXFileReference";
+         path = "StringExtensions.swift";
+         sourceTree = "<group>";
       };
       "OBJ_163" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_100";
+         isa = "PBXFileReference";
+         path = "Tree.swift";
+         sourceTree = "<group>";
       };
       "OBJ_164" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_101";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_165"
+         );
+         name = "ArgumentParserToolInfo";
+         path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_165" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_102";
+         isa = "PBXFileReference";
+         path = "ToolInfo.swift";
+         sourceTree = "<group>";
       };
       "OBJ_166" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_103";
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/shenglinfan/Desktop/workspace/xcresultparser/.build/checkouts/swift-argument-parser/Package.swift";
+         sourceTree = "<group>";
       };
       "OBJ_167" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_105";
-      };
-      "OBJ_168" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_106";
-      };
-      "OBJ_169" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_107";
+         isa = "PBXGroup";
+         children = (
+            "swift-argument-parser::ArgumentParser::Product",
+            "swift-argument-parser::ArgumentParserToolInfo::Product",
+            "Yams::CYaml::Product",
+            "Xcresultparser::CommandlineTool::Product",
+            "XCResultKit::XCResultKit::Product",
+            "Xcresultparser::XcresultparserLib::Product",
+            "Xcresultparser::XcresultparserTests::Product",
+            "Yams::Yams::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
       };
       "OBJ_17" = {
          isa = "PBXGroup";
          children = (
             "OBJ_18",
-            "OBJ_19"
+            "OBJ_21",
+            "OBJ_23",
+            "OBJ_25",
+            "OBJ_27"
+         );
+         name = "Formatters";
+         path = "Formatters";
+         sourceTree = "<group>";
+      };
+      "OBJ_176" = {
+         isa = "PBXFileReference";
+         path = "images";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_177" = {
+         isa = "PBXFileReference";
+         path = "CommandlineTool";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_178" = {
+         isa = "PBXFileReference";
+         path = "build";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_179" = {
+         isa = "PBXFileReference";
+         path = "DerivedData";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_18" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_19",
+            "OBJ_20"
          );
          name = "CLI";
          path = "CLI";
          sourceTree = "<group>";
       };
-      "OBJ_170" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_108";
-      };
-      "OBJ_171" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_109";
-      };
-      "OBJ_172" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_110";
-      };
-      "OBJ_173" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_112";
-      };
-      "OBJ_174" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_113";
-      };
-      "OBJ_175" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_114";
-      };
-      "OBJ_176" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_115";
-      };
-      "OBJ_177" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_116";
-      };
-      "OBJ_178" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_117";
-      };
-      "OBJ_179" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_118";
-      };
-      "OBJ_18" = {
-         isa = "PBXFileReference";
-         path = "CLIFormat.swift";
-         sourceTree = "<group>";
-      };
       "OBJ_180" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_119";
+         isa = "PBXFileReference";
+         path = "LICENSE";
+         sourceTree = "<group>";
       };
       "OBJ_181" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_120";
-      };
-      "OBJ_182" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_121";
-      };
-      "OBJ_183" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_123";
-      };
-      "OBJ_184" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_124";
-      };
-      "OBJ_185" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_125";
-      };
-      "OBJ_186" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_126";
-      };
-      "OBJ_187" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_127";
-      };
-      "OBJ_188" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_129";
-      };
-      "OBJ_189" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_130";
-      };
-      "OBJ_19" = {
          isa = "PBXFileReference";
-         path = "CLIResultFormatter.swift";
+         path = "CHANGELOG.md";
          sourceTree = "<group>";
       };
-      "OBJ_190" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_131";
+      "OBJ_182" = {
+         isa = "PBXFileReference";
+         path = "Makefile";
+         sourceTree = "<group>";
       };
-      "OBJ_191" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_132";
+      "OBJ_183" = {
+         isa = "PBXFileReference";
+         path = "README.md";
+         sourceTree = "<group>";
       };
-      "OBJ_192" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_193"
-         );
-      };
-      "OBJ_193" = {
-         isa = "PBXBuildFile";
-         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
-      };
-      "OBJ_194" = {
-         isa = "PBXTargetDependency";
-         target = "swift-argument-parser::ArgumentParserToolInfo";
-      };
-      "OBJ_196" = {
+      "OBJ_185" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_197",
-            "OBJ_198"
+            "OBJ_186",
+            "OBJ_187"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_197" = {
+      "OBJ_186" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             CURRENT_PROJECT_VERSION = "1";
@@ -706,7 +603,7 @@
             HEADER_SEARCH_PATHS = (
                "$(inherited)"
             );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParserToolInfo_Info.plist";
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParser_Info.plist";
             IPHONEOS_DEPLOYMENT_TARGET = "9.0";
             LD_RUNPATH_SEARCH_PATHS = (
                "$(inherited)",
@@ -722,7 +619,7 @@
             OTHER_SWIFT_FLAGS = (
                "$(inherited)"
             );
-            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParserToolInfo";
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
             PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
             PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
             SKIP_INSTALL = "YES";
@@ -730,13 +627,13 @@
                "$(inherited)"
             );
             SWIFT_VERSION = "5.0";
-            TARGET_NAME = "ArgumentParserToolInfo";
+            TARGET_NAME = "ArgumentParser";
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
          name = "Debug";
       };
-      "OBJ_198" = {
+      "OBJ_187" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             CURRENT_PROJECT_VERSION = "1";
@@ -749,7 +646,7 @@
             HEADER_SEARCH_PATHS = (
                "$(inherited)"
             );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParserToolInfo_Info.plist";
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParser_Info.plist";
             IPHONEOS_DEPLOYMENT_TARGET = "9.0";
             LD_RUNPATH_SEARCH_PATHS = (
                "$(inherited)",
@@ -765,7 +662,7 @@
             OTHER_SWIFT_FLAGS = (
                "$(inherited)"
             );
-            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParserToolInfo";
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
             PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
             PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
             SKIP_INSTALL = "YES";
@@ -773,17 +670,102 @@
                "$(inherited)"
             );
             SWIFT_VERSION = "5.0";
-            TARGET_NAME = "ArgumentParserToolInfo";
+            TARGET_NAME = "ArgumentParser";
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
          name = "Release";
       };
-      "OBJ_199" = {
+      "OBJ_188" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_200"
+            "OBJ_189",
+            "OBJ_190",
+            "OBJ_191",
+            "OBJ_192",
+            "OBJ_193",
+            "OBJ_194",
+            "OBJ_195",
+            "OBJ_196",
+            "OBJ_197",
+            "OBJ_198",
+            "OBJ_199",
+            "OBJ_200",
+            "OBJ_201",
+            "OBJ_202",
+            "OBJ_203",
+            "OBJ_204",
+            "OBJ_205",
+            "OBJ_206",
+            "OBJ_207",
+            "OBJ_208",
+            "OBJ_209",
+            "OBJ_210",
+            "OBJ_211",
+            "OBJ_212",
+            "OBJ_213",
+            "OBJ_214",
+            "OBJ_215",
+            "OBJ_216",
+            "OBJ_217",
+            "OBJ_218",
+            "OBJ_219",
+            "OBJ_220",
+            "OBJ_221",
+            "OBJ_222",
+            "OBJ_223",
+            "OBJ_224",
+            "OBJ_225"
          );
+      };
+      "OBJ_189" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_122";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "CLIFormat.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_190" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_123";
+      };
+      "OBJ_191" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_124";
+      };
+      "OBJ_192" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_125";
+      };
+      "OBJ_193" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_127";
+      };
+      "OBJ_194" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_128";
+      };
+      "OBJ_195" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_129";
+      };
+      "OBJ_196" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_130";
+      };
+      "OBJ_197" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_131";
+      };
+      "OBJ_198" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_132";
+      };
+      "OBJ_199" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_133";
       };
       "OBJ_2" = {
          isa = "XCConfigurationList";
@@ -795,12 +777,8 @@
          defaultConfigurationName = "Release";
       };
       "OBJ_20" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_21"
-         );
-         name = "HTML";
-         path = "HTML";
+         isa = "PBXFileReference";
+         path = "CLIResultFormatter.swift";
          sourceTree = "<group>";
       };
       "OBJ_200" = {
@@ -808,181 +786,152 @@
          fileRef = "OBJ_134";
       };
       "OBJ_201" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_136";
+      };
+      "OBJ_202" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_137";
       };
       "OBJ_203" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_204",
-            "OBJ_205"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_138";
       };
       "OBJ_204" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/CommandlineTool_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "11.0";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "CommandlineTool";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_139";
       };
       "OBJ_205" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/CommandlineTool_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "11.0";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "CommandlineTool";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_140";
       };
       "OBJ_206" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_207",
-            "OBJ_208"
-         );
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_141";
       };
       "OBJ_207" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_9";
+         fileRef = "OBJ_143";
       };
       "OBJ_208" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_10";
+         fileRef = "OBJ_144";
       };
       "OBJ_209" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_210",
-            "OBJ_211",
-            "OBJ_212",
-            "OBJ_213"
-         );
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_145";
       };
       "OBJ_21" = {
-         isa = "PBXFileReference";
-         path = "HTMLResultFormatter.swift";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_22"
+         );
+         name = "HTML";
+         path = "HTML";
          sourceTree = "<group>";
       };
       "OBJ_210" = {
          isa = "PBXBuildFile";
-         fileRef = "Xcresultparser::XcresultparserLib::Product";
+         fileRef = "OBJ_146";
       };
       "OBJ_211" = {
          isa = "PBXBuildFile";
-         fileRef = "XCResultKit::XCResultKit::Product";
+         fileRef = "OBJ_147";
       };
       "OBJ_212" = {
          isa = "PBXBuildFile";
-         fileRef = "swift-argument-parser::ArgumentParser::Product";
+         fileRef = "OBJ_148";
       };
       "OBJ_213" = {
          isa = "PBXBuildFile";
-         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
+         fileRef = "OBJ_149";
       };
       "OBJ_214" = {
-         isa = "PBXTargetDependency";
-         target = "Xcresultparser::XcresultparserLib";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_150";
+      };
+      "OBJ_215" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_151";
       };
       "OBJ_216" = {
-         isa = "PBXTargetDependency";
-         target = "XCResultKit::XCResultKit";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_152";
+      };
+      "OBJ_217" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_154";
       };
       "OBJ_218" = {
-         isa = "PBXTargetDependency";
-         target = "swift-argument-parser::ArgumentParser";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_155";
       };
       "OBJ_219" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_156";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "HTMLResultFormatter.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_220" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_157";
+      };
+      "OBJ_221" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_158";
+      };
+      "OBJ_222" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_160";
+      };
+      "OBJ_223" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_161";
+      };
+      "OBJ_224" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_162";
+      };
+      "OBJ_225" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_163";
+      };
+      "OBJ_226" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_227"
+         );
+      };
+      "OBJ_227" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
+      };
+      "OBJ_228" = {
          isa = "PBXTargetDependency";
          target = "swift-argument-parser::ArgumentParserToolInfo";
       };
-      "OBJ_22" = {
+      "OBJ_23" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_23"
+            "OBJ_24"
          );
          name = "Markdown";
          path = "Markdown";
          sourceTree = "<group>";
       };
-      "OBJ_220" = {
+      "OBJ_230" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_221",
-            "OBJ_222"
+            "OBJ_231",
+            "OBJ_232"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_221" = {
+      "OBJ_231" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             CURRENT_PROJECT_VERSION = "1";
@@ -995,13 +944,13 @@
             HEADER_SEARCH_PATHS = (
                "$(inherited)"
             );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XCResultKit_Info.plist";
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParserToolInfo_Info.plist";
             IPHONEOS_DEPLOYMENT_TARGET = "9.0";
             LD_RUNPATH_SEARCH_PATHS = (
                "$(inherited)",
                "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
             );
-            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
             OTHER_CFLAGS = (
                "$(inherited)"
             );
@@ -1011,7 +960,7 @@
             OTHER_SWIFT_FLAGS = (
                "$(inherited)"
             );
-            PRODUCT_BUNDLE_IDENTIFIER = "XCResultKit";
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParserToolInfo";
             PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
             PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
             SKIP_INSTALL = "YES";
@@ -1019,13 +968,13 @@
                "$(inherited)"
             );
             SWIFT_VERSION = "5.0";
-            TARGET_NAME = "XCResultKit";
+            TARGET_NAME = "ArgumentParserToolInfo";
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
          name = "Debug";
       };
-      "OBJ_222" = {
+      "OBJ_232" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             CURRENT_PROJECT_VERSION = "1";
@@ -1038,13 +987,13 @@
             HEADER_SEARCH_PATHS = (
                "$(inherited)"
             );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XCResultKit_Info.plist";
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/ArgumentParserToolInfo_Info.plist";
             IPHONEOS_DEPLOYMENT_TARGET = "9.0";
             LD_RUNPATH_SEARCH_PATHS = (
                "$(inherited)",
                "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
             );
-            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
             OTHER_CFLAGS = (
                "$(inherited)"
             );
@@ -1054,7 +1003,7 @@
             OTHER_SWIFT_FLAGS = (
                "$(inherited)"
             );
-            PRODUCT_BUNDLE_IDENTIFIER = "XCResultKit";
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParserToolInfo";
             PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
             PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
             SKIP_INSTALL = "YES";
@@ -1062,464 +1011,474 @@
                "$(inherited)"
             );
             SWIFT_VERSION = "5.0";
-            TARGET_NAME = "XCResultKit";
+            TARGET_NAME = "ArgumentParserToolInfo";
             TVOS_DEPLOYMENT_TARGET = "9.0";
             WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
          name = "Release";
       };
-      "OBJ_223" = {
+      "OBJ_233" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_224",
-            "OBJ_225",
-            "OBJ_226",
-            "OBJ_227",
-            "OBJ_228",
-            "OBJ_229",
-            "OBJ_230",
-            "OBJ_231",
-            "OBJ_232",
-            "OBJ_233",
-            "OBJ_234",
-            "OBJ_235",
-            "OBJ_236",
-            "OBJ_237",
+            "OBJ_234"
+         );
+      };
+      "OBJ_234" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_165";
+      };
+      "OBJ_235" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_237" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
             "OBJ_238",
-            "OBJ_239",
-            "OBJ_240",
+            "OBJ_239"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_238" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DEFINES_MODULE = "NO";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "YAML_DECLARE_EXPORT"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/CYaml_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CYaml";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CYaml";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_239" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DEFINES_MODULE = "NO";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "YAML_DECLARE_EXPORT"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/CYaml_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CYaml";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CYaml";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "MDResultFormatter.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_240" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
             "OBJ_241",
             "OBJ_242",
             "OBJ_243",
             "OBJ_244",
             "OBJ_245",
-            "OBJ_246",
-            "OBJ_247",
-            "OBJ_248",
-            "OBJ_249",
-            "OBJ_250",
-            "OBJ_251",
-            "OBJ_252",
-            "OBJ_253",
-            "OBJ_254",
-            "OBJ_255",
-            "OBJ_256",
-            "OBJ_257",
-            "OBJ_258",
-            "OBJ_259",
-            "OBJ_260",
-            "OBJ_261",
-            "OBJ_262",
-            "OBJ_263",
-            "OBJ_264",
-            "OBJ_265",
-            "OBJ_266",
-            "OBJ_267",
-            "OBJ_268",
-            "OBJ_269",
-            "OBJ_270",
-            "OBJ_271",
-            "OBJ_272",
-            "OBJ_273",
-            "OBJ_274"
+            "OBJ_246"
          );
       };
-      "OBJ_224" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_36";
-      };
-      "OBJ_225" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_37";
-      };
-      "OBJ_226" = {
+      "OBJ_241" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_38";
       };
-      "OBJ_227" = {
+      "OBJ_242" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_39";
       };
-      "OBJ_228" = {
+      "OBJ_243" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_40";
       };
-      "OBJ_229" = {
+      "OBJ_244" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_41";
       };
-      "OBJ_23" = {
-         isa = "PBXFileReference";
-         path = "MDResultFormatter.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_230" = {
+      "OBJ_245" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_42";
       };
-      "OBJ_231" = {
+      "OBJ_246" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_43";
       };
-      "OBJ_232" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_44";
+      "OBJ_247" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
       };
-      "OBJ_233" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_45";
+      "OBJ_249" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_250",
+            "OBJ_251"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
       };
-      "OBJ_234" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_46";
-      };
-      "OBJ_235" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_47";
-      };
-      "OBJ_236" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_48";
-      };
-      "OBJ_237" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_49";
-      };
-      "OBJ_238" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_50";
-      };
-      "OBJ_239" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_51";
-      };
-      "OBJ_24" = {
+      "OBJ_25" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_25"
+            "OBJ_26"
          );
          name = "Text";
          path = "Text";
          sourceTree = "<group>";
       };
-      "OBJ_240" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_52";
+      "OBJ_250" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/CommandlineTool_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "CommandlineTool";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
       };
-      "OBJ_241" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_53";
+      "OBJ_251" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/CommandlineTool_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "CommandlineTool";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
       };
-      "OBJ_242" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_54";
+      "OBJ_252" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_253",
+            "OBJ_254"
+         );
       };
-      "OBJ_243" = {
+      "OBJ_253" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_55";
+         fileRef = "OBJ_9";
       };
-      "OBJ_244" = {
+      "OBJ_254" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_56";
+         fileRef = "OBJ_10";
       };
-      "OBJ_245" = {
+      "OBJ_255" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_256",
+            "OBJ_257",
+            "OBJ_258",
+            "OBJ_259",
+            "OBJ_260",
+            "OBJ_261"
+         );
+      };
+      "OBJ_256" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_57";
+         fileRef = "Xcresultparser::XcresultparserLib::Product";
       };
-      "OBJ_246" = {
+      "OBJ_257" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_58";
+         fileRef = "Yams::Yams::Product";
       };
-      "OBJ_247" = {
+      "OBJ_258" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_59";
+         fileRef = "Yams::CYaml::Product";
       };
-      "OBJ_248" = {
+      "OBJ_259" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_60";
+         fileRef = "XCResultKit::XCResultKit::Product";
       };
-      "OBJ_249" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_61";
-      };
-      "OBJ_25" = {
+      "OBJ_26" = {
          isa = "PBXFileReference";
          path = "TextResultFormatter.swift";
          sourceTree = "<group>";
       };
-      "OBJ_250" = {
+      "OBJ_260" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_62";
+         fileRef = "swift-argument-parser::ArgumentParser::Product";
       };
-      "OBJ_251" = {
+      "OBJ_261" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_63";
+         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
       };
-      "OBJ_252" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_64";
+      "OBJ_262" = {
+         isa = "PBXTargetDependency";
+         target = "Xcresultparser::XcresultparserLib";
       };
-      "OBJ_253" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_65";
+      "OBJ_264" = {
+         isa = "PBXTargetDependency";
+         target = "Yams::Yams";
       };
-      "OBJ_254" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_66";
+      "OBJ_266" = {
+         isa = "PBXTargetDependency";
+         target = "Yams::CYaml";
       };
-      "OBJ_255" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_67";
+      "OBJ_267" = {
+         isa = "PBXTargetDependency";
+         target = "XCResultKit::XCResultKit";
       };
-      "OBJ_256" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_68";
+      "OBJ_269" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParser";
       };
-      "OBJ_257" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_69";
-      };
-      "OBJ_258" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_70";
-      };
-      "OBJ_259" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_71";
-      };
-      "OBJ_26" = {
+      "OBJ_27" = {
          isa = "PBXFileReference";
          path = "XCResultFormatting.swift";
          sourceTree = "<group>";
       };
-      "OBJ_260" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_72";
-      };
-      "OBJ_261" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_73";
-      };
-      "OBJ_262" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_74";
-      };
-      "OBJ_263" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_75";
-      };
-      "OBJ_264" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_76";
-      };
-      "OBJ_265" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_77";
-      };
-      "OBJ_266" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_78";
-      };
-      "OBJ_267" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_79";
-      };
-      "OBJ_268" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_80";
-      };
-      "OBJ_269" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_81";
-      };
-      "OBJ_27" = {
-         isa = "PBXFileReference";
-         path = "OutputFormat.swift";
-         sourceTree = "<group>";
-      };
       "OBJ_270" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_82";
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParserToolInfo";
       };
       "OBJ_271" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_83";
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_272",
+            "OBJ_273"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
       };
       "OBJ_272" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_84";
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XCResultKit_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "XCResultKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "XCResultKit";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
       };
       "OBJ_273" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_85";
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XCResultKit_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "XCResultKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "XCResultKit";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
       };
       "OBJ_274" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_86";
-      };
-      "OBJ_275" = {
-         isa = "PBXFrameworksBuildPhase";
+         isa = "PBXSourcesBuildPhase";
          files = (
-         );
-      };
-      "OBJ_277" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
+            "OBJ_275",
+            "OBJ_276",
+            "OBJ_277",
             "OBJ_278",
-            "OBJ_279"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_278" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
-               "-package-description-version",
-               "5.1.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_279" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
-               "-package-description-version",
-               "5.1.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_28" = {
-         isa = "PBXFileReference";
-         path = "Shell.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_280" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_281"
-         );
-      };
-      "OBJ_281" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_87";
-      };
-      "OBJ_282" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
+            "OBJ_279",
+            "OBJ_280",
+            "OBJ_281",
+            "OBJ_282",
             "OBJ_283",
-            "OBJ_284"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_283" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserLib_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "11.0";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "XcresultparserLib";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "XcresultparserLib";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_284" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserLib_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "11.0";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "XcresultparserLib";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "XcresultparserLib";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_285" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
+            "OBJ_284",
+            "OBJ_285",
             "OBJ_286",
             "OBJ_287",
             "OBJ_288",
@@ -1530,73 +1489,147 @@
             "OBJ_293",
             "OBJ_294",
             "OBJ_295",
-            "OBJ_296"
+            "OBJ_296",
+            "OBJ_297",
+            "OBJ_298",
+            "OBJ_299",
+            "OBJ_300",
+            "OBJ_301",
+            "OBJ_302",
+            "OBJ_303",
+            "OBJ_304",
+            "OBJ_305",
+            "OBJ_306",
+            "OBJ_307",
+            "OBJ_308",
+            "OBJ_309",
+            "OBJ_310",
+            "OBJ_311",
+            "OBJ_312",
+            "OBJ_313",
+            "OBJ_314",
+            "OBJ_315",
+            "OBJ_316",
+            "OBJ_317",
+            "OBJ_318",
+            "OBJ_319",
+            "OBJ_320",
+            "OBJ_321",
+            "OBJ_322",
+            "OBJ_323",
+            "OBJ_324",
+            "OBJ_325"
          );
+      };
+      "OBJ_275" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_67";
+      };
+      "OBJ_276" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_68";
+      };
+      "OBJ_277" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_69";
+      };
+      "OBJ_278" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_70";
+      };
+      "OBJ_279" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_71";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "OutputFormat.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_280" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_72";
+      };
+      "OBJ_281" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_73";
+      };
+      "OBJ_282" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_74";
+      };
+      "OBJ_283" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_75";
+      };
+      "OBJ_284" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_76";
+      };
+      "OBJ_285" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_77";
       };
       "OBJ_286" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_13";
+         fileRef = "OBJ_78";
       };
       "OBJ_287" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
+         fileRef = "OBJ_79";
       };
       "OBJ_288" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
+         fileRef = "OBJ_80";
       };
       "OBJ_289" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
+         fileRef = "OBJ_81";
       };
       "OBJ_29" = {
          isa = "PBXFileReference";
-         path = "XCResultFormatter.swift";
+         path = "Shell.swift";
          sourceTree = "<group>";
       };
       "OBJ_290" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
+         fileRef = "OBJ_82";
       };
       "OBJ_291" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
+         fileRef = "OBJ_83";
       };
       "OBJ_292" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
+         fileRef = "OBJ_84";
       };
       "OBJ_293" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_26";
+         fileRef = "OBJ_85";
       };
       "OBJ_294" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
+         fileRef = "OBJ_86";
       };
       "OBJ_295" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_28";
+         fileRef = "OBJ_87";
       };
       "OBJ_296" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_29";
+         fileRef = "OBJ_88";
       };
       "OBJ_297" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_298",
-            "OBJ_299",
-            "OBJ_300"
-         );
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_89";
       };
       "OBJ_298" = {
          isa = "PBXBuildFile";
-         fileRef = "XCResultKit::XCResultKit::Product";
+         fileRef = "OBJ_90";
       };
       "OBJ_299" = {
          isa = "PBXBuildFile";
-         fileRef = "swift-argument-parser::ArgumentParser::Product";
+         fileRef = "OBJ_91";
       };
       "OBJ_3" = {
          isa = "XCBuildConfiguration";
@@ -1636,444 +1669,859 @@
          name = "Debug";
       };
       "OBJ_30" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_31"
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "XCResultFormatter.swift";
+         sourceTree = "<group>";
       };
       "OBJ_300" = {
          isa = "PBXBuildFile";
-         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
+         fileRef = "OBJ_92";
       };
       "OBJ_301" = {
-         isa = "PBXTargetDependency";
-         target = "XCResultKit::XCResultKit";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_93";
       };
       "OBJ_302" = {
-         isa = "PBXTargetDependency";
-         target = "swift-argument-parser::ArgumentParser";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_94";
       };
       "OBJ_303" = {
-         isa = "PBXTargetDependency";
-         target = "swift-argument-parser::ArgumentParserToolInfo";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_95";
+      };
+      "OBJ_304" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_96";
       };
       "OBJ_305" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_306",
-            "OBJ_307"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_97";
       };
       "OBJ_306" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
-               "-package-description-version",
-               "5.4.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_98";
       };
       "OBJ_307" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
-               "-package-description-version",
-               "5.4.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_99";
       };
       "OBJ_308" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_309"
-         );
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_100";
       };
       "OBJ_309" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
+         fileRef = "OBJ_101";
       };
       "OBJ_31" = {
          isa = "PBXGroup";
          children = (
             "OBJ_32"
          );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_310" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_102";
+      };
+      "OBJ_311" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_103";
+      };
+      "OBJ_312" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_104";
+      };
+      "OBJ_313" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_105";
+      };
+      "OBJ_314" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_106";
+      };
+      "OBJ_315" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_107";
+      };
+      "OBJ_316" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_108";
+      };
+      "OBJ_317" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_109";
+      };
+      "OBJ_318" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_110";
+      };
+      "OBJ_319" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_111";
+      };
+      "OBJ_32" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_33"
+         );
          name = "XcresultparserTests";
          path = "Tests/XcresultparserTests";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_311" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_312",
-            "OBJ_313"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+      "OBJ_320" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_112";
       };
-      "OBJ_312" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
+      "OBJ_321" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_113";
       };
-      "OBJ_313" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
+      "OBJ_322" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_114";
       };
-      "OBJ_314" = {
-         isa = "PBXTargetDependency";
-         target = "Xcresultparser::XcresultparserTests";
+      "OBJ_323" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_115";
       };
-      "OBJ_316" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_317",
-            "OBJ_318"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+      "OBJ_324" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_116";
       };
-      "OBJ_317" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "11.0";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "XcresultparserTests";
-            TVOS_DEPLOYMENT_TARGET = "14.0";
-            WATCHOS_DEPLOYMENT_TARGET = "7.0";
-         };
-         name = "Debug";
+      "OBJ_325" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_117";
       };
-      "OBJ_318" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            CURRENT_PROJECT_VERSION = "1";
-            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "11.0";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "XcresultparserTests";
-            TVOS_DEPLOYMENT_TARGET = "14.0";
-            WATCHOS_DEPLOYMENT_TARGET = "7.0";
-         };
-         name = "Release";
-      };
-      "OBJ_319" = {
-         isa = "PBXSourcesBuildPhase";
+      "OBJ_326" = {
+         isa = "PBXFrameworksBuildPhase";
          files = (
-            "OBJ_320"
          );
       };
-      "OBJ_32" = {
+      "OBJ_328" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_329",
+            "OBJ_330"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_329" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.1.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_33" = {
          isa = "PBXFileReference";
          path = "XcresultparserTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_320" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
-      };
-      "OBJ_321" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_322",
-            "OBJ_323",
-            "OBJ_324",
-            "OBJ_325"
-         );
-      };
-      "OBJ_322" = {
-         isa = "PBXBuildFile";
-         fileRef = "Xcresultparser::XcresultparserLib::Product";
-      };
-      "OBJ_323" = {
-         isa = "PBXBuildFile";
-         fileRef = "XCResultKit::XCResultKit::Product";
-      };
-      "OBJ_324" = {
-         isa = "PBXBuildFile";
-         fileRef = "swift-argument-parser::ArgumentParser::Product";
-      };
-      "OBJ_325" = {
-         isa = "PBXBuildFile";
-         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
-      };
-      "OBJ_326" = {
-         isa = "PBXTargetDependency";
-         target = "Xcresultparser::XcresultparserLib";
-      };
-      "OBJ_327" = {
-         isa = "PBXTargetDependency";
-         target = "XCResultKit::XCResultKit";
-      };
-      "OBJ_328" = {
-         isa = "PBXTargetDependency";
-         target = "swift-argument-parser::ArgumentParser";
-      };
-      "OBJ_329" = {
-         isa = "PBXTargetDependency";
-         target = "swift-argument-parser::ArgumentParserToolInfo";
-      };
-      "OBJ_33" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_34",
-            "OBJ_88"
-         );
-         name = "Dependencies";
-         path = "";
-         sourceTree = "<group>";
+      "OBJ_330" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.1.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
       };
       "OBJ_331" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_332",
-            "OBJ_333"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_332" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
-               "-package-description-version",
-               "5.2.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_333" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
-               "-package-description-version",
-               "5.2.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_334" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_335"
+            "OBJ_332"
          );
       };
-      "OBJ_335" = {
+      "OBJ_332" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_135";
+         fileRef = "OBJ_118";
       };
-      "OBJ_337" = {
+      "OBJ_333" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_338",
-            "OBJ_339"
+            "OBJ_334",
+            "OBJ_335"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_338" = {
+      "OBJ_334" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserLib_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "XcresultparserLib";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "XcresultparserLib";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
          name = "Debug";
       };
-      "OBJ_339" = {
+      "OBJ_335" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserLib_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "XcresultparserLib";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "XcresultparserLib";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
          };
          name = "Release";
+      };
+      "OBJ_336" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_337",
+            "OBJ_338",
+            "OBJ_339",
+            "OBJ_340",
+            "OBJ_341",
+            "OBJ_342",
+            "OBJ_343",
+            "OBJ_344",
+            "OBJ_345",
+            "OBJ_346",
+            "OBJ_347",
+            "OBJ_348"
+         );
+      };
+      "OBJ_337" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_338" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_339" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_15";
       };
       "OBJ_34" = {
          isa = "PBXGroup";
          children = (
             "OBJ_35",
-            "OBJ_87"
+            "OBJ_65",
+            "OBJ_119"
          );
-         name = "XCResultKit 0.9.3";
+         name = "Dependencies";
          path = "";
-         sourceTree = "SOURCE_ROOT";
+         sourceTree = "<group>";
       };
       "OBJ_340" = {
-         isa = "PBXTargetDependency";
-         target = "Xcresultparser::CommandlineTool";
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_341" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_342" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_343" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_344" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_26";
+      };
+      "OBJ_345" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_27";
+      };
+      "OBJ_346" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_347" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_348" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_349" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_350",
+            "OBJ_351",
+            "OBJ_352",
+            "OBJ_353",
+            "OBJ_354"
+         );
       };
       "OBJ_35" = {
          isa = "PBXGroup";
          children = (
             "OBJ_36",
+            "OBJ_48",
+            "OBJ_64"
+         );
+         name = "Yams 5.0.1";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_350" = {
+         isa = "PBXBuildFile";
+         fileRef = "Yams::Yams::Product";
+      };
+      "OBJ_351" = {
+         isa = "PBXBuildFile";
+         fileRef = "Yams::CYaml::Product";
+      };
+      "OBJ_352" = {
+         isa = "PBXBuildFile";
+         fileRef = "XCResultKit::XCResultKit::Product";
+      };
+      "OBJ_353" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParser::Product";
+      };
+      "OBJ_354" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
+      };
+      "OBJ_355" = {
+         isa = "PBXTargetDependency";
+         target = "Yams::Yams";
+      };
+      "OBJ_356" = {
+         isa = "PBXTargetDependency";
+         target = "Yams::CYaml";
+      };
+      "OBJ_357" = {
+         isa = "PBXTargetDependency";
+         target = "XCResultKit::XCResultKit";
+      };
+      "OBJ_358" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParser";
+      };
+      "OBJ_359" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParserToolInfo";
+      };
+      "OBJ_36" = {
+         isa = "PBXGroup";
+         children = (
             "OBJ_37",
+            "OBJ_44"
+         );
+         name = "CYaml";
+         path = ".build/checkouts/Yams/Sources/CYaml";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_361" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_362",
+            "OBJ_363"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_362" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.4.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_363" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.4.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_364" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_365"
+         );
+      };
+      "OBJ_365" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_367" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_368",
+            "OBJ_369"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_368" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_369" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_37" = {
+         isa = "PBXGroup";
+         children = (
             "OBJ_38",
             "OBJ_39",
             "OBJ_40",
             "OBJ_41",
             "OBJ_42",
-            "OBJ_43",
-            "OBJ_44",
-            "OBJ_45",
-            "OBJ_46",
-            "OBJ_47",
-            "OBJ_48",
-            "OBJ_49",
-            "OBJ_50",
-            "OBJ_51",
-            "OBJ_52",
-            "OBJ_53",
-            "OBJ_54",
-            "OBJ_55",
-            "OBJ_56",
-            "OBJ_57",
-            "OBJ_58",
-            "OBJ_59",
-            "OBJ_60",
-            "OBJ_61",
-            "OBJ_62",
-            "OBJ_63",
-            "OBJ_64",
-            "OBJ_65",
-            "OBJ_66",
-            "OBJ_67",
-            "OBJ_68",
-            "OBJ_69",
-            "OBJ_70",
-            "OBJ_71",
-            "OBJ_72",
-            "OBJ_73",
-            "OBJ_74",
-            "OBJ_75",
-            "OBJ_76",
-            "OBJ_77",
-            "OBJ_78",
-            "OBJ_79",
-            "OBJ_80",
-            "OBJ_81",
-            "OBJ_82",
-            "OBJ_83",
-            "OBJ_84",
-            "OBJ_85",
-            "OBJ_86"
+            "OBJ_43"
          );
-         name = "XCResultKit";
-         path = ".build/checkouts/XCResultKit/Sources/XCResultKit";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_36" = {
-         isa = "PBXFileReference";
-         path = "ActionDeviceRecord.swift";
+         name = "src";
+         path = "src";
          sourceTree = "<group>";
       };
-      "OBJ_37" = {
-         isa = "PBXFileReference";
-         path = "ActionPlatformRecord.swift";
-         sourceTree = "<group>";
+      "OBJ_370" = {
+         isa = "PBXTargetDependency";
+         target = "Xcresultparser::XcresultparserTests";
+      };
+      "OBJ_372" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_373",
+            "OBJ_374"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_373" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "XcresultparserTests";
+            TVOS_DEPLOYMENT_TARGET = "14.0";
+            WATCHOS_DEPLOYMENT_TARGET = "7.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_374" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/XcresultparserTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "XcresultparserTests";
+            TVOS_DEPLOYMENT_TARGET = "14.0";
+            WATCHOS_DEPLOYMENT_TARGET = "7.0";
+         };
+         name = "Release";
+      };
+      "OBJ_375" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_376"
+         );
+      };
+      "OBJ_376" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_33";
+      };
+      "OBJ_377" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_378",
+            "OBJ_379",
+            "OBJ_380",
+            "OBJ_381",
+            "OBJ_382",
+            "OBJ_383"
+         );
+      };
+      "OBJ_378" = {
+         isa = "PBXBuildFile";
+         fileRef = "Xcresultparser::XcresultparserLib::Product";
+      };
+      "OBJ_379" = {
+         isa = "PBXBuildFile";
+         fileRef = "Yams::Yams::Product";
       };
       "OBJ_38" = {
          isa = "PBXFileReference";
-         path = "ActionRecord.swift";
+         path = "api.c";
          sourceTree = "<group>";
+      };
+      "OBJ_380" = {
+         isa = "PBXBuildFile";
+         fileRef = "Yams::CYaml::Product";
+      };
+      "OBJ_381" = {
+         isa = "PBXBuildFile";
+         fileRef = "XCResultKit::XCResultKit::Product";
+      };
+      "OBJ_382" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParser::Product";
+      };
+      "OBJ_383" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product";
+      };
+      "OBJ_384" = {
+         isa = "PBXTargetDependency";
+         target = "Xcresultparser::XcresultparserLib";
+      };
+      "OBJ_385" = {
+         isa = "PBXTargetDependency";
+         target = "Yams::Yams";
+      };
+      "OBJ_386" = {
+         isa = "PBXTargetDependency";
+         target = "Yams::CYaml";
+      };
+      "OBJ_387" = {
+         isa = "PBXTargetDependency";
+         target = "XCResultKit::XCResultKit";
+      };
+      "OBJ_388" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParser";
+      };
+      "OBJ_389" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParserToolInfo";
       };
       "OBJ_39" = {
          isa = "PBXFileReference";
-         path = "ActionResult.swift";
+         path = "emitter.c";
          sourceTree = "<group>";
+      };
+      "OBJ_390" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_391",
+            "OBJ_392"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_391" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/Yams_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Yams";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Yams";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_392" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include"
+            );
+            INFOPLIST_FILE = "Xcresultparser.xcodeproj/Yams_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Yams";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Yams";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_393" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_394",
+            "OBJ_395",
+            "OBJ_396",
+            "OBJ_397",
+            "OBJ_398",
+            "OBJ_399",
+            "OBJ_400",
+            "OBJ_401",
+            "OBJ_402",
+            "OBJ_403",
+            "OBJ_404",
+            "OBJ_405",
+            "OBJ_406",
+            "OBJ_407",
+            "OBJ_408"
+         );
+      };
+      "OBJ_394" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_49";
+      };
+      "OBJ_395" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_50";
+      };
+      "OBJ_396" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_51";
+      };
+      "OBJ_397" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_52";
+      };
+      "OBJ_398" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_53";
+      };
+      "OBJ_399" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_54";
       };
       "OBJ_4" = {
          isa = "XCBuildConfiguration";
@@ -2110,52 +2558,262 @@
       };
       "OBJ_40" = {
          isa = "PBXFileReference";
-         path = "ActionRunDestinationRecord.swift";
+         path = "parser.c";
          sourceTree = "<group>";
+      };
+      "OBJ_400" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_55";
+      };
+      "OBJ_401" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_56";
+      };
+      "OBJ_402" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_57";
+      };
+      "OBJ_403" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_58";
+      };
+      "OBJ_404" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_59";
+      };
+      "OBJ_405" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_60";
+      };
+      "OBJ_406" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_61";
+      };
+      "OBJ_407" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_62";
+      };
+      "OBJ_408" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_63";
+      };
+      "OBJ_409" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_410"
+         );
       };
       "OBJ_41" = {
          isa = "PBXFileReference";
-         path = "ActionSDKRecord.swift";
+         path = "reader.c";
          sourceTree = "<group>";
+      };
+      "OBJ_410" = {
+         isa = "PBXBuildFile";
+         fileRef = "Yams::CYaml::Product";
+      };
+      "OBJ_411" = {
+         isa = "PBXTargetDependency";
+         target = "Yams::CYaml";
+      };
+      "OBJ_413" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_414",
+            "OBJ_415"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_414" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.4.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_415" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.4.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_416" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_417"
+         );
+      };
+      "OBJ_417" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_64";
+      };
+      "OBJ_419" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_420",
+            "OBJ_421"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
       };
       "OBJ_42" = {
          isa = "PBXFileReference";
-         path = "ActionTestActivitySummary.swift";
+         path = "scanner.c";
          sourceTree = "<group>";
+      };
+      "OBJ_420" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_421" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.0.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_422" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_423"
+         );
+      };
+      "OBJ_423" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_166";
+      };
+      "OBJ_425" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_426",
+            "OBJ_427"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_426" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_427" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_428" = {
+         isa = "PBXTargetDependency";
+         target = "Xcresultparser::CommandlineTool";
       };
       "OBJ_43" = {
          isa = "PBXFileReference";
-         path = "ActionTestAttachment.swift";
+         path = "writer.c";
          sourceTree = "<group>";
       };
       "OBJ_44" = {
-         isa = "PBXFileReference";
-         path = "ActionTestFailureSummary.swift";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_47"
+         );
+         name = "include";
+         path = "include";
          sourceTree = "<group>";
       };
       "OBJ_45" = {
          isa = "PBXFileReference";
-         path = "ActionTestMetadata.swift";
+         path = "CYaml.h";
          sourceTree = "<group>";
       };
       "OBJ_46" = {
          isa = "PBXFileReference";
-         path = "ActionTestPerformanceMetricSummary.swift";
+         path = "yaml.h";
          sourceTree = "<group>";
       };
       "OBJ_47" = {
          isa = "PBXFileReference";
-         path = "ActionTestPlanRunSummaries.swift";
+         name = "module.modulemap";
+         path = "/Users/shenglinfan/Desktop/workspace/xcresultparser/.build/checkouts/Yams/Sources/CYaml/include/module.modulemap";
          sourceTree = "<group>";
       };
       "OBJ_48" = {
-         isa = "PBXFileReference";
-         path = "ActionTestPlanRunSummary.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_49",
+            "OBJ_50",
+            "OBJ_51",
+            "OBJ_52",
+            "OBJ_53",
+            "OBJ_54",
+            "OBJ_55",
+            "OBJ_56",
+            "OBJ_57",
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60",
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_63"
+         );
+         name = "Yams";
+         path = ".build/checkouts/Yams/Sources/Yams";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_49" = {
          isa = "PBXFileReference";
-         path = "ActionTestRepetitionPolicySummary.swift";
+         path = "Constructor.swift";
          sourceTree = "<group>";
       };
       "OBJ_5" = {
@@ -2163,68 +2821,69 @@
          children = (
             "OBJ_6",
             "OBJ_7",
-            "OBJ_30",
-            "OBJ_33",
-            "OBJ_136",
-            "OBJ_143",
-            "OBJ_144",
-            "OBJ_145",
-            "OBJ_146",
-            "OBJ_147",
-            "OBJ_148",
-            "OBJ_149"
+            "OBJ_31",
+            "OBJ_34",
+            "OBJ_167",
+            "OBJ_176",
+            "OBJ_177",
+            "OBJ_178",
+            "OBJ_179",
+            "OBJ_180",
+            "OBJ_181",
+            "OBJ_182",
+            "OBJ_183"
          );
          path = "";
          sourceTree = "<group>";
       };
       "OBJ_50" = {
          isa = "PBXFileReference";
-         path = "ActionTestSummary.swift";
+         path = "Decoder.swift";
          sourceTree = "<group>";
       };
       "OBJ_51" = {
          isa = "PBXFileReference";
-         path = "ActionTestSummaryGroup.swift";
+         path = "Emitter.swift";
          sourceTree = "<group>";
       };
       "OBJ_52" = {
          isa = "PBXFileReference";
-         path = "ActionTestableSummary.swift";
+         path = "Encoder.swift";
          sourceTree = "<group>";
       };
       "OBJ_53" = {
          isa = "PBXFileReference";
-         path = "ActionsInvocationRecord.swift";
+         path = "Mark.swift";
          sourceTree = "<group>";
       };
       "OBJ_54" = {
          isa = "PBXFileReference";
-         path = "ActivityLogAnalyzerControlFlowStep.swift";
+         path = "Node.Mapping.swift";
          sourceTree = "<group>";
       };
       "OBJ_55" = {
          isa = "PBXFileReference";
-         path = "ActivityLogAnalyzerControlFlowStepEdge.swift";
+         path = "Node.Scalar.swift";
          sourceTree = "<group>";
       };
       "OBJ_56" = {
          isa = "PBXFileReference";
-         path = "ActivityLogAnalyzerEventStep.swift";
+         path = "Node.Sequence.swift";
          sourceTree = "<group>";
       };
       "OBJ_57" = {
          isa = "PBXFileReference";
-         path = "ActivityLogAnalyzerResultMessage.swift";
+         path = "Node.swift";
          sourceTree = "<group>";
       };
       "OBJ_58" = {
          isa = "PBXFileReference";
-         path = "ActivityLogAnalyzerWarningMessage.swift";
+         path = "Parser.swift";
          sourceTree = "<group>";
       };
       "OBJ_59" = {
          isa = "PBXFileReference";
-         path = "ActivityLogCommandInvocationSection.swift";
+         path = "Representer.swift";
          sourceTree = "<group>";
       };
       "OBJ_6" = {
@@ -2235,52 +2894,113 @@
       };
       "OBJ_60" = {
          isa = "PBXFileReference";
-         path = "ActivityLogMajorSection.swift";
+         path = "Resolver.swift";
          sourceTree = "<group>";
       };
       "OBJ_61" = {
          isa = "PBXFileReference";
-         path = "ActivityLogMessage.swift";
+         path = "String+Yams.swift";
          sourceTree = "<group>";
       };
       "OBJ_62" = {
          isa = "PBXFileReference";
-         path = "ActivityLogMessageAnnotation.swift";
+         path = "Tag.swift";
          sourceTree = "<group>";
       };
       "OBJ_63" = {
          isa = "PBXFileReference";
-         path = "ActivityLogSection.swift";
+         path = "YamlError.swift";
          sourceTree = "<group>";
       };
       "OBJ_64" = {
          isa = "PBXFileReference";
-         path = "ActivityLogTargetBuildSection.swift";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/shenglinfan/Desktop/workspace/xcresultparser/.build/checkouts/Yams/Package.swift";
          sourceTree = "<group>";
       };
       "OBJ_65" = {
-         isa = "PBXFileReference";
-         path = "ActivityLogUnitTestSection.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_66",
+            "OBJ_118"
+         );
+         name = "XCResultKit 0.9.3";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_66" = {
-         isa = "PBXFileReference";
-         path = "ArchiveInfo.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+            "OBJ_72",
+            "OBJ_73",
+            "OBJ_74",
+            "OBJ_75",
+            "OBJ_76",
+            "OBJ_77",
+            "OBJ_78",
+            "OBJ_79",
+            "OBJ_80",
+            "OBJ_81",
+            "OBJ_82",
+            "OBJ_83",
+            "OBJ_84",
+            "OBJ_85",
+            "OBJ_86",
+            "OBJ_87",
+            "OBJ_88",
+            "OBJ_89",
+            "OBJ_90",
+            "OBJ_91",
+            "OBJ_92",
+            "OBJ_93",
+            "OBJ_94",
+            "OBJ_95",
+            "OBJ_96",
+            "OBJ_97",
+            "OBJ_98",
+            "OBJ_99",
+            "OBJ_100",
+            "OBJ_101",
+            "OBJ_102",
+            "OBJ_103",
+            "OBJ_104",
+            "OBJ_105",
+            "OBJ_106",
+            "OBJ_107",
+            "OBJ_108",
+            "OBJ_109",
+            "OBJ_110",
+            "OBJ_111",
+            "OBJ_112",
+            "OBJ_113",
+            "OBJ_114",
+            "OBJ_115",
+            "OBJ_116",
+            "OBJ_117"
+         );
+         name = "XCResultKit";
+         path = ".build/checkouts/XCResultKit/Sources/XCResultKit";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_67" = {
          isa = "PBXFileReference";
-         path = "CodeCoverage.swift";
+         path = "ActionDeviceRecord.swift";
          sourceTree = "<group>";
       };
       "OBJ_68" = {
          isa = "PBXFileReference";
-         path = "CodeCoverageInfo.swift";
+         path = "ActionPlatformRecord.swift";
          sourceTree = "<group>";
       };
       "OBJ_69" = {
          isa = "PBXFileReference";
-         path = "DocumentLocation.swift";
+         path = "ActionRecord.swift";
          sourceTree = "<group>";
       };
       "OBJ_7" = {
@@ -2295,52 +3015,52 @@
       };
       "OBJ_70" = {
          isa = "PBXFileReference";
-         path = "IssueSummary.swift";
+         path = "ActionResult.swift";
          sourceTree = "<group>";
       };
       "OBJ_71" = {
          isa = "PBXFileReference";
-         path = "LogStoreExecution.swift";
+         path = "ActionRunDestinationRecord.swift";
          sourceTree = "<group>";
       };
       "OBJ_72" = {
          isa = "PBXFileReference";
-         path = "LogStoreManifest.swift";
+         path = "ActionSDKRecord.swift";
          sourceTree = "<group>";
       };
       "OBJ_73" = {
          isa = "PBXFileReference";
-         path = "Logger.swift";
+         path = "ActionTestActivitySummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_74" = {
          isa = "PBXFileReference";
-         path = "Reference.swift";
+         path = "ActionTestAttachment.swift";
          sourceTree = "<group>";
       };
       "OBJ_75" = {
          isa = "PBXFileReference";
-         path = "ResultIssueSummaries.swift";
+         path = "ActionTestFailureSummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_76" = {
          isa = "PBXFileReference";
-         path = "ResultMetrics.swift";
+         path = "ActionTestMetadata.swift";
          sourceTree = "<group>";
       };
       "OBJ_77" = {
          isa = "PBXFileReference";
-         path = "TestFailureIssueSummary.swift";
+         path = "ActionTestPerformanceMetricSummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_78" = {
          isa = "PBXFileReference";
-         path = "TypeDefinition.swift";
+         path = "ActionTestPlanRunSummaries.swift";
          sourceTree = "<group>";
       };
       "OBJ_79" = {
          isa = "PBXFileReference";
-         path = "XCResultBool.swift";
+         path = "ActionTestPlanRunSummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_8" = {
@@ -2355,70 +3075,53 @@
       };
       "OBJ_80" = {
          isa = "PBXFileReference";
-         path = "XCResultDate.swift";
+         path = "ActionTestRepetitionPolicySummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_81" = {
          isa = "PBXFileReference";
-         path = "XCResultDouble.swift";
+         path = "ActionTestSummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_82" = {
          isa = "PBXFileReference";
-         path = "XCResultFile.swift";
+         path = "ActionTestSummaryGroup.swift";
          sourceTree = "<group>";
       };
       "OBJ_83" = {
          isa = "PBXFileReference";
-         path = "XCResultInt.swift";
+         path = "ActionTestableSummary.swift";
          sourceTree = "<group>";
       };
       "OBJ_84" = {
          isa = "PBXFileReference";
-         path = "XCResultKit.swift";
+         path = "ActionsInvocationRecord.swift";
          sourceTree = "<group>";
       };
       "OBJ_85" = {
          isa = "PBXFileReference";
-         path = "XCResultObject.swift";
+         path = "ActivityLogAnalyzerControlFlowStep.swift";
          sourceTree = "<group>";
       };
       "OBJ_86" = {
          isa = "PBXFileReference";
-         path = "XCResultString.swift";
+         path = "ActivityLogAnalyzerControlFlowStepEdge.swift";
          sourceTree = "<group>";
       };
       "OBJ_87" = {
          isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Users/linfan/Documents/GitHub/xcresultparser/.build/checkouts/XCResultKit/Package.swift";
+         path = "ActivityLogAnalyzerEventStep.swift";
          sourceTree = "<group>";
       };
       "OBJ_88" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_89",
-            "OBJ_133",
-            "OBJ_135"
-         );
-         name = "swift-argument-parser 0.5.0";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "ActivityLogAnalyzerResultMessage.swift";
+         sourceTree = "<group>";
       };
       "OBJ_89" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_90",
-            "OBJ_95",
-            "OBJ_104",
-            "OBJ_111",
-            "OBJ_122",
-            "OBJ_128"
-         );
-         name = "ArgumentParser";
-         path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "ActivityLogAnalyzerWarningMessage.swift";
+         sourceTree = "<group>";
       };
       "OBJ_9" = {
          isa = "PBXFileReference";
@@ -2426,78 +3129,60 @@
          sourceTree = "<group>";
       };
       "OBJ_90" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_91",
-            "OBJ_92",
-            "OBJ_93",
-            "OBJ_94"
-         );
-         name = "Completions";
-         path = "Completions";
+         isa = "PBXFileReference";
+         path = "ActivityLogCommandInvocationSection.swift";
          sourceTree = "<group>";
       };
       "OBJ_91" = {
          isa = "PBXFileReference";
-         path = "BashCompletionsGenerator.swift";
+         path = "ActivityLogMajorSection.swift";
          sourceTree = "<group>";
       };
       "OBJ_92" = {
          isa = "PBXFileReference";
-         path = "CompletionsGenerator.swift";
+         path = "ActivityLogMessage.swift";
          sourceTree = "<group>";
       };
       "OBJ_93" = {
          isa = "PBXFileReference";
-         path = "FishCompletionsGenerator.swift";
+         path = "ActivityLogMessageAnnotation.swift";
          sourceTree = "<group>";
       };
       "OBJ_94" = {
          isa = "PBXFileReference";
-         path = "ZshCompletionsGenerator.swift";
+         path = "ActivityLogSection.swift";
          sourceTree = "<group>";
       };
       "OBJ_95" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_96",
-            "OBJ_97",
-            "OBJ_98",
-            "OBJ_99",
-            "OBJ_100",
-            "OBJ_101",
-            "OBJ_102",
-            "OBJ_103"
-         );
-         name = "Parsable Properties";
-         path = "Parsable Properties";
+         isa = "PBXFileReference";
+         path = "ActivityLogTargetBuildSection.swift";
          sourceTree = "<group>";
       };
       "OBJ_96" = {
          isa = "PBXFileReference";
-         path = "Argument.swift";
+         path = "ActivityLogUnitTestSection.swift";
          sourceTree = "<group>";
       };
       "OBJ_97" = {
          isa = "PBXFileReference";
-         path = "ArgumentHelp.swift";
+         path = "ArchiveInfo.swift";
          sourceTree = "<group>";
       };
       "OBJ_98" = {
          isa = "PBXFileReference";
-         path = "CompletionKind.swift";
+         path = "CodeCoverage.swift";
          sourceTree = "<group>";
       };
       "OBJ_99" = {
          isa = "PBXFileReference";
-         path = "Errors.swift";
+         path = "CodeCoverageInfo.swift";
          sourceTree = "<group>";
       };
       "XCResultKit::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_277";
+         buildConfigurationList = "OBJ_328";
          buildPhases = (
-            "OBJ_280"
+            "OBJ_331"
          );
          dependencies = (
          );
@@ -2507,10 +3192,10 @@
       };
       "XCResultKit::XCResultKit" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_220";
+         buildConfigurationList = "OBJ_271";
          buildPhases = (
-            "OBJ_223",
-            "OBJ_275"
+            "OBJ_274",
+            "OBJ_326"
          );
          dependencies = (
          );
@@ -2526,16 +3211,18 @@
       };
       "Xcresultparser::CommandlineTool" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_203";
+         buildConfigurationList = "OBJ_249";
          buildPhases = (
-            "OBJ_206",
-            "OBJ_209"
+            "OBJ_252",
+            "OBJ_255"
          );
          dependencies = (
-            "OBJ_214",
-            "OBJ_216",
-            "OBJ_218",
-            "OBJ_219"
+            "OBJ_262",
+            "OBJ_264",
+            "OBJ_266",
+            "OBJ_267",
+            "OBJ_269",
+            "OBJ_270"
          );
          name = "CommandlineTool";
          productName = "CommandlineTool";
@@ -2549,9 +3236,9 @@
       };
       "Xcresultparser::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_305";
+         buildConfigurationList = "OBJ_361";
          buildPhases = (
-            "OBJ_308"
+            "OBJ_364"
          );
          dependencies = (
          );
@@ -2561,15 +3248,17 @@
       };
       "Xcresultparser::XcresultparserLib" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_282";
+         buildConfigurationList = "OBJ_333";
          buildPhases = (
-            "OBJ_285",
-            "OBJ_297"
+            "OBJ_336",
+            "OBJ_349"
          );
          dependencies = (
-            "OBJ_301",
-            "OBJ_302",
-            "OBJ_303"
+            "OBJ_355",
+            "OBJ_356",
+            "OBJ_357",
+            "OBJ_358",
+            "OBJ_359"
          );
          name = "XcresultparserLib";
          productName = "XcresultparserLib";
@@ -2583,27 +3272,29 @@
       };
       "Xcresultparser::XcresultparserPackageTests::ProductTarget" = {
          isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_311";
+         buildConfigurationList = "OBJ_367";
          buildPhases = (
          );
          dependencies = (
-            "OBJ_314"
+            "OBJ_370"
          );
          name = "XcresultparserPackageTests";
          productName = "XcresultparserPackageTests";
       };
       "Xcresultparser::XcresultparserTests" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_316";
+         buildConfigurationList = "OBJ_372";
          buildPhases = (
-            "OBJ_319",
-            "OBJ_321"
+            "OBJ_375",
+            "OBJ_377"
          );
          dependencies = (
-            "OBJ_326",
-            "OBJ_327",
-            "OBJ_328",
-            "OBJ_329"
+            "OBJ_384",
+            "OBJ_385",
+            "OBJ_386",
+            "OBJ_387",
+            "OBJ_388",
+            "OBJ_389"
          );
          name = "XcresultparserTests";
          productName = "XcresultparserTests";
@@ -2617,24 +3308,75 @@
       };
       "Xcresultparser::xcresultparser::ProductTarget" = {
          isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_337";
+         buildConfigurationList = "OBJ_425";
          buildPhases = (
          );
          dependencies = (
-            "OBJ_340"
+            "OBJ_428"
          );
          name = "xcresultparser";
          productName = "xcresultparser";
       };
-      "swift-argument-parser::ArgumentParser" = {
+      "Yams::CYaml" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_151";
+         buildConfigurationList = "OBJ_237";
          buildPhases = (
-            "OBJ_154",
-            "OBJ_192"
+            "OBJ_240",
+            "OBJ_247"
          );
          dependencies = (
-            "OBJ_194"
+         );
+         name = "CYaml";
+         productName = "CYaml";
+         productReference = "Yams::CYaml::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Yams::CYaml::Product" = {
+         isa = "PBXFileReference";
+         path = "CYaml.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Yams::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_413";
+         buildPhases = (
+            "OBJ_416"
+         );
+         dependencies = (
+         );
+         name = "YamsPackageDescription";
+         productName = "YamsPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "Yams::Yams" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_390";
+         buildPhases = (
+            "OBJ_393",
+            "OBJ_409"
+         );
+         dependencies = (
+            "OBJ_411"
+         );
+         name = "Yams";
+         productName = "Yams";
+         productReference = "Yams::Yams::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Yams::Yams::Product" = {
+         isa = "PBXFileReference";
+         path = "Yams.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-argument-parser::ArgumentParser" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_185";
+         buildPhases = (
+            "OBJ_188",
+            "OBJ_226"
+         );
+         dependencies = (
+            "OBJ_228"
          );
          name = "ArgumentParser";
          productName = "ArgumentParser";
@@ -2648,10 +3390,10 @@
       };
       "swift-argument-parser::ArgumentParserToolInfo" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_196";
+         buildConfigurationList = "OBJ_230";
          buildPhases = (
-            "OBJ_199",
-            "OBJ_201"
+            "OBJ_233",
+            "OBJ_235"
          );
          dependencies = (
          );
@@ -2667,9 +3409,9 @@
       };
       "swift-argument-parser::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_331";
+         buildConfigurationList = "OBJ_419";
          buildPhases = (
-            "OBJ_334"
+            "OBJ_422"
          );
          dependencies = (
          );

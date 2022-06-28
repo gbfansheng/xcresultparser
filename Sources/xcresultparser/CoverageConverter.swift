@@ -23,15 +23,21 @@ public struct CoverageConverter {
     private let resultFile: XCResultFile
     private let projectRoot: String
     private let codeCoverage: CodeCoverage
+    private let coverageFilter: CoverageFilter?
     
-    public init?(with url: URL,
-          projectRoot: String = "") {
+    public init?(with url: URL, projectRoot: String = "", blackListFilePath: String? = nil, blackListRegex: String? = nil) {
         resultFile = XCResultFile(url: url)
         guard let record = resultFile.getCodeCoverage() else {
             return nil
         }
         self.projectRoot = projectRoot
         codeCoverage = record
+        do {
+            coverageFilter = try CoverageFilter(filePath: blackListFilePath)
+        } catch {
+            coverageFilter = nil
+            writeToStdErrorLn("init CoverageFilter fail")
+        }
     }
     
     public func xmlString(quiet: Bool) throws -> (String, XMLElement) {
@@ -47,12 +53,13 @@ public struct CoverageConverter {
         queue.qualityOfService = .userInitiated
         for file in files {
             guard !file.isEmpty else { continue }
+            guard coverageFilter?.isBlocked(file) == false else { continue }
             if !quiet {
                 writeToStdError("Coverage for: \(file)\n")
             }
             let op = BlockOperation {
                 do {
-                    let coverage = try fileCoverageXML(for: file, relativeTo: projectRoot)
+                    let coverage = try fileCoverageXML(for: file, relativeTo: projectRoot, quiet: quiet)
                     coverageXML.addChild(coverage)
                     if let rawXML = rawXML {
                         rawXML.addChild(coverage.copy() as! XMLElement)
@@ -82,8 +89,11 @@ public struct CoverageConverter {
         }
     }
     
-    private func fileCoverageXML(for file: String, relativeTo projectRoot: String) throws -> XMLElement {
+    private func fileCoverageXML(for file: String, relativeTo projectRoot: String, quiet: Bool) throws -> XMLElement {
         let coverageData = try coverageForFile(path: file)
+        if (!quiet) {
+            writeToStdError("Converting xml for: \(file)\n")
+        }
         let fileElement = XMLElement(name: "file")
         fileElement.addAttribute(name: "path", stringValue: relativePath(for: file, relativeTo: projectRoot))
         let pattern = #"(\d+):\s*(\d)"#

@@ -28,6 +28,9 @@ struct xcresultparser: ParsableCommand {
     @Option(name: .shortAndLong, help: "The fields in the summary. Default is all: errors|warnings|analyzerWarnings|tests|failed|skipped")
     var summaryFields: String?
     
+    @Option(name: .shortAndLong, help: "The blackList file path. A yaml file of paths, key value is 'blackList' ")
+    var blackListFile: String?
+    
     @Flag(name: .shortAndLong, help: "Whether to print coverage data.")
     var coverage: Int
     
@@ -72,7 +75,7 @@ struct xcresultparser: ParsableCommand {
     }
     
     private func outputSonarXML(for xcresult: String) throws -> XMLElement {
-        guard let converter = CoverageConverter(with: URL(fileURLWithPath: xcresult), projectRoot: projectRoot ?? "") else {
+        guard let converter = CoverageConverter(with: URL(fileURLWithPath: xcresult), projectRoot: projectRoot ?? "", blackListFilePath: blackListFile) else {
             throw ParseError.argumentError
         }
         let (rslt, rawXML) = try converter.xmlString(quiet: quiet == 1)
